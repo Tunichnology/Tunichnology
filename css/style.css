@@ -1,0 +1,139 @@
+:root {
+  --dark-color: #212121;
+}
+
+body {
+  font-family: system-ui;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.5em;
+  background-image: url('t.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+
+
+}
+
+h3 {
+  color: #403D39;
+}
+h1 {
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 2em;
+}
+p{
+  font-size: 40px;
+  color: #3E3939;
+  font-weight: bold;
+
+
+}
+img {
+  height: 150px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main * {
+  margin-bottom: 12px;
+}
+
+input {
+  text-align: center;
+  font-size: 40px;
+  outline: none;
+  border: none;
+  border-bottom: 5px solid black;
+  text-transform: capitalize;
+}
+
+/* for styling the autocomplete style */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: var(--dark-color) !important;
+}
+
+button {
+  background-color: #F6F4F4; /* Green */
+  color: rgb(49, 48, 48);
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  color: rgb(4, 4, 4); 
+  border: 2px solid ;
+  border-radius: 5px;
+
+}
+button:hover {
+  background-color: #2C2727;
+  color: white;
+  
+}
+
+a {
+  color: #403D39;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:hover {
+  color: rgba(136, 80, 50, 0.974);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/* dark mode css */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: var(--dark-color);
+    color: #fff;
+  }
+  input,
+  input:active {
+    background: var(--dark-color);
+    border-color: #fff;
+    color: #fff;
+  }
+
+  /* for styling the autocomplete style */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #fff !important;
+  }
+}
+
+
+
+
+
+select{
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 40%;
+  height: 60px;
+  font-family: inherit;
+  font-size: inherit;
+  cursor:pointer ;
+  line-height: inherit;
+background-color: #3E3939;
+  z-index: 1;
+  border-radius: 10px;
+  color: #fff;
+  
+}

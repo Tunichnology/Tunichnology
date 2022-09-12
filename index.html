@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tunichnology تونكنولوجي</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h3>Telecharger votre Certificat gratuitement avec </h3>
+        <h2> <a href="https://www.youtube.com/channel/UCPMAoM8CwQofK1uqIymWlLg/about" target="_blank"
+                rel="link">Tunichnology تونكنولوجي</a></h2>
+    </header>
+    <select id="listselect" onchange ="sel( );">
+        <option value="" selected disabled hidden>Choisisez votre formation ici</option>
+        <option value="Alg">Introduction à l'algorithmique</option>        
+        <option value="C">Introduction au langage C</option>        
+        <option value="Cplusplus">Introduction au langage C++</option>        
+        <option value="Java">Introduction au langage Java</option>        
+        <option value="Python">Introduction au langage Python</option>        
+        <option value="Arduino">Introduction à Arduino</option>        
+        <option value="Catia">Apprendre le logiciel Catia</option>        
+        <option value="Isis">Introduction à Isis Proteus</option>        
+        <option value="Solidworks">Devenir un professionnel en Solidworks</option>  
+        <option value="tia">Introduction À La Programmation Grafcet Sous Siemens TIA PORTAL</option>        
+      
+    </select>
+
+    <main>
+
+        <label for="name"> <p>Ecrivez votre Nom</p> </label>
+        <input required type="text" name="Name" autocomplete="name"  placeholder="Nom Prenom" id="name" minlength="5">
+        <Button id="submitBtn"> Telecharger votre Certificat </Button>
+
+
+    </main>
+    <script src="https://unpkg.com/pdf-lib@1.4.0"></script>
+    <script src="./js/FileSaver.js"></script>
+    <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
